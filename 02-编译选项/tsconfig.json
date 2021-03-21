@@ -1,0 +1,72 @@
+{
+    /*
+        include: 指定需要编译的文件
+        **: 任意文件夹
+        *: 任意文件
+    */
+    "include": [
+        "./src/**/*"
+    ],
+    
+    /*
+        exclude: 指定不包含的文件
+    */
+    // "exclude": [],
+
+    // 继承某个配置文件
+    // "extends": "",
+
+    /*
+        compilerOptions: 编译器选项
+    */
+    "compilerOptions": {
+        // target: 编译版本 默认ES3
+        // 'ES3', 'ES5', 'ES6'/'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ESNext'
+        "target": "ES6",
+        
+        // module: 模块规范
+        // 'None', 'CommonJS', 'AMD', 'System', 'UMD', 'ES6', 'ES2015', 'ES2020' or 'ESNext'
+        "module": "ES6",
+
+        // lib: 使用的库
+        // 'ES5', 'ES6', 'ES2015', 'ES7', 'ES2016', 'ES2017', 'ES2018', 'ESNext', 'DOM', 'DOM.Iterable', 'WebWorker', 'ScriptHost', 'ES2015.Core', 'ES2015.Collection', 'ES2015.Generator', 'ES2015.Iterable', 'ES2015.Promise', 'ES2015.Proxy', 'ES2015.Reflect', 'ES2015.Symbol', 'ES2015.Symbol.WellKnown', 'ES2016.Array.Include', 'ES2017.object', 'ES2017.Intl', 'ES2017.SharedMemory', 'ES2017.String', 'ES2017.TypedArrays', 'ES2018.Intl', 'ES2018.Promise', 'ES2018.RegExp', 'ESNext.AsyncIterable', 'ESNext.Array', 'ESNext.Intl', 'ESNext.Symbol'
+        // "lib": [],
+
+        // outDir: js输出的文件夹
+        "outDir": "./dist",
+
+        // outFile: 将ts合并成一个文件
+        // "outFile": "./dist/app.js",
+
+        // allowJs: 是否将js文件编译, 默认false
+        "allowJs": true,
+
+        // checkJs: 是否检查js文件的规范
+        "checkJs": true,
+
+        // removeComments: 是否去除注释, 默认false
+        "removeComments": false,
+
+        // noEmit: 是否生成编译后的文件, 默认false
+        "noEmit": false,
+
+        // noEmitOnError: 当error时不生成编译文件, 默认false
+        "noEmitOnError": true,
+
+        // alwaysStrict: 用来设置编译之后的文件是否开启strict(严格)模式, 默认false
+        // 当引用模块, 自动开启strict模式
+        "alwaysStrict": true,
+
+        // noImplicitAny: 不允许使用Any类型
+        "noImplicitAny": true,
+
+        // noImplicitThis: 不允许使用不明确类型的this
+        "noImplicitThis": true,
+
+        // strictNullChecks: 严格检查 空值
+        "strictNullChecks": false,
+
+        // strict: 所有严格检查的总开关
+        "strict": true
+    }
+}
